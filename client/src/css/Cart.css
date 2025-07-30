@@ -1,0 +1,165 @@
+.cart-section {
+  width: 100%;
+  background-color: #eaeded; /* Amazon's light gray background */
+  padding: 40px 0;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-container {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.left-cart {
+  flex: 1 1 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-cart img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+}
+
+.cart-btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-btn1,
+.cart-btn2 {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  color: #111;
+  padding: 12px 0;
+  font-weight: 500;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-btn1:hover,
+.cart-btn2:hover {
+  background-color: #f7ca00;
+}
+
+.right-cart {
+  flex: 2 1 500px;
+  max-width: 600px;
+}
+
+.right-cart h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right-cart h4 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #565959;
+  font-size: 15px;
+}
+
+.right-cart p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.right-cart span {
+  color: #b12704;
+  font-weight: 600;
+}
+
+.discount-box {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.discount-box h5,
+.discount-box h4 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.free-delivery-value,
+.fast-delivery-value {
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.description span {
+  color: #333;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-cart,
+  .right-cart {
+    max-width: 100%;
+  }
+}
+
+/* Responsive: Small phones */
+@media (max-width: 480px) {
+  .cart-section {
+    padding: 20px 10px;
+  }
+
+  .cart-btn1,
+  .cart-btn2 {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .right-cart h3 {
+    font-size: 20px;
+  }
+
+  .right-cart p,
+  .description,
+  .discount-box h5,
+  .discount-box h4 {
+    font-size: 14px;
+  }
+
+  .left-cart img {
+    max-height: 250px;
+  }
+}

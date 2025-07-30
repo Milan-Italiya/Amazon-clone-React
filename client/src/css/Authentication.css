@@ -1,0 +1,84 @@
+/* Common Auth Container (Sign Up & Login) */
+.auth-container {
+  max-width: 350px;
+  /* margin: 40px auto; */
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 26px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional Logo */
+.auth-logo {
+  display: block;
+  /* height: 52px; */
+  margin: 0 auto 20px;
+  width: 100px;
+}
+
+/* Common Heading */
+.auth-container h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Label & Input */
+.auth-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  outline: none;
+}
+
+.auth-container input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px #e77600;
+}
+
+/* Submit Button */
+.auth-button {
+  width: 100%;
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.auth-button:hover {
+  background: #e2b33c;
+}
+
+/* Bottom Text (Sign in instead, Already have an account?) */
+.auth-helper-text {
+  font-size: 12px;
+  color: #111;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.auth-helper-text a {
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.auth-helper-text a:hover {
+  text-decoration: underline;
+}

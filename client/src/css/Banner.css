@@ -1,0 +1,55 @@
+/* ✅ Banner container */
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✅ Each slide */
+.banner-slide {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-img {
+    height: 180px;
+  }
+}
+
+/* ✅ Custom arrows */
+.banner-arrow {
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 100px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.banner-prev-arrow {
+  left: 10px;
+  z-index: 1;
+}
+
+.banner-next-arrow {
+  right: 10px;
+  z-index: 1;
+}
+
+.banner-arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
